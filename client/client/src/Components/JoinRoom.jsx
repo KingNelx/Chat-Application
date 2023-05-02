@@ -1,5 +1,8 @@
 import chatroom from './Images/chatroom.webp'
 import { useState } from 'react';
+import io from 'socket.io-client'
+import Chats from './Chats';
+const socket = io.connect("http://localhost:9000")
 
 const JoinRoom = () => {
 
@@ -9,7 +12,7 @@ const JoinRoom = () => {
     const joinRoom = () => {
 
         if(userName !== "" && room !== ""){
-
+            socket.emit("JOIN_CHAT_ROOM", room)
         }
     }   
 
@@ -37,8 +40,11 @@ const JoinRoom = () => {
                     </div>
 
                     <div class="text-center mt-2">
-                        <button type="button" class="btn btn-outline-primary">JOIN</button>
+                        <button type="button" class="btn btn-outline-primary" 
+                        onClick={joinRoom}>JOIN</button>
                     </div>
+
+                    <Chats socketProp={socket}/>
 
                 </div>
             </div>
