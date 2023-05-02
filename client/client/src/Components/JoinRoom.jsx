@@ -44,7 +44,7 @@ const JoinRoom = () => {
                         onClick={joinRoom}>JOIN</button>
                     </div>
 
-                    <Chats socketProp={socket}/>
+                    <Chats socketProp={socket} username={userName} room={room}/>
 
                 </div>
             </div>
