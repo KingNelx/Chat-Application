@@ -60,3 +60,10 @@ react: The core React library
 react-dom: The DOM renderer for React
 react-scripts: A set of scripts and configuration files for React projects
 To get started, clone the repository and run npm install to install the dependencies. Then run npm start to start the development server. Finally, open http://localhost:3000 in your browser to see the app in action.
+
+![g1](https://user-images.githubusercontent.com/88817315/235708980-93e09f08-f376-409f-b67e-f32a1a05ecb2.PNG)
+![g2](https://user-images.githubusercontent.com/88817315/235709004-c0606b3d-a8ab-408d-9696-c442678391a1.PNG)
+![g3](https://user-images.githubusercontent.com/88817315/235709018-fecf8f2e-84b1-4b2e-8cad-d9fd12079fa2.PNG)
+
+
+
